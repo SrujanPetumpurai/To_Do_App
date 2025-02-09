@@ -13,7 +13,7 @@ export default function List(){
     let [task_description,setTask_description]= useState('');
     let [tasks,setTasks]=useState<Task[]>([]);
 
-    let changeTaskName =(e)=>{
+    let changeTaskName =(e:React.ChangeEvent<HTMLInputElement>)=>{
         setTask_name(e.target.value)
     };
     let filterArray = tasks.filter((task)=>{
@@ -25,7 +25,7 @@ export default function List(){
         })
     }
 
-    let changeTaskDescription = (e)=>{
+    let changeTaskDescription = (e:React.ChangeEvent<HTMLInputElement>)=>{
         setTask_description(e.target.value)
     };
 
