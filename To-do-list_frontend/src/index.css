@@ -1,0 +1,12 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+body{
+    background-image: url('/page_bg.jpg');
+  background:cover;
+  background-position: center;
+  background-blend-mode:darken;
+  background-color: rgba(7,7,7,0.4);
+}
